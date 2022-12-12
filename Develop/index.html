@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <div class="card">
+      <!--Created a form class to make selectors for password criteria-->
+      <form id="passwordGeneratorForm" class="form">
+        Password Length: <input type="number" min="8" max="128" value="8" name="passwordLength" id="passwordLength" />
+        <br />
+        Include Uppercase : <input type="checkbox" name="passwordIncludeUppercase" id="passwordIncludeUppercase" />
+        <br />
+        Include Numeric : <input type="checkbox" name="passwordIncludeNumeric" id="passwordIncludeNumeric" /> <br />
+        Include Special Characters : <input type="checkbox" name="passwordIncludeSpecialCharacters"
+          id="passwordIncludeSpecialCharacters" /> <br />
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <div class="card-body">
+          <textarea readonly id="password" placeholder="Your Secure Password"
+            aria-label="Generated Password"></textarea>
+        </div>
+        <div class="card-footer">
+          <input type="submit" id="generate" class="btn"></input>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--added an alert at the start of the screen to inform the user-->
+  <script>alert('Password must be atleast 8 characters long.\nMust contain atleast 1 number.\nMust contain one special character (E.g. !@$)')</script>
+  <script src="script.js"></script>
+</body>
+
+</html>
