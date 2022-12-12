@@ -4,7 +4,7 @@ I started out by creating selectors in the HTML file all locatated in a <Form> t
 creating the Password length I wanted to make sure the user was not able to choose anything less then 8 characters and nothing more than 128 by setting the min and max to their respective numbers.
 After that I made check boxes for each of the remaining criteria boxes.
 
-<img src=https://github.com/Ryebread5555/module-3-dec-12-2022/Develop/assets/Criteria%Selectors.jpg>
+<img src=https://github.com/Ryebread5555/module-3-dec-12-2022/Develop/assets/CriteriaSelectors.jpg>
 
 
 I also changed a couple of things in the HTML like changing the <button> tag into a <input> tag with a type="sumbit" for the btn. This was just easier for me to work with when I was working on my Javascript.
